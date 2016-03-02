@@ -1,0 +1,41 @@
+{
+  "name": "tristate-checkbox",
+  "version": "0.1.0",
+  "description": "A paper-checkbox like element that supports an indeterminate state.",
+  "authors": [
+    "Thad Humphries <thad.humphries@gmail.com>"
+  ],
+  "keywords": [
+    "web-component",
+    "polymer",
+    "paper",
+    "checkbox",
+    "control"
+  ],
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/johnthad/tristate-checkbox"
+  },
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "homepage": "https://github.com/johnthad/tristate-checkbox/",
+  "ignore": [],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.3.0",
+    "iron-validatable-behavior": "PolymerElements/iron-validatable-behavior#^1.0.0",
+    "iron-form-element-behavior": "PolymerElements/iron-form-element-behavior#^1.0.0",
+    "paper-behaviors": "PolymerElements/paper-behaviors#^1.0.0",
+    "paper-ripple": "PolymerElements/paper-ripple#^1.0.0",
+    "paper-styles": "PolymerElements/paper-styles#^1.1.0"
+  },
+  "devDependencies": {
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0",
+    "web-component-tester": "^4.0.0",
+    "test-fixture": "PolymerElements/test-fixture#^1.0.0",
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.0.0",
+    "iron-flex-layout": "PolymerElements/iron-flex-layout#^1.0.0",
+    "iron-test-helpers": "PolymerElements/iron-test-helpers#^1.0.0"
+  },
+  "main": "tristate-checkbox.html"
+}
