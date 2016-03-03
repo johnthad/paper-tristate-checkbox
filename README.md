@@ -10,6 +10,8 @@ Example:
 
     <tristate-checkbox state="on">label</tristate-checkbox>
 
+[[https://github.com/johnthad/tristate-checkbox/blob/master/tristate-checkbox.png|alt=tristate-checkbox sample]]
+
 The web component handles the `aria-checked` attribute in accordance with the W3C's
 [WAI-ARIA 1.0 Authoring Practices](https://www.w3.org/TR/wai-aria-practices/#checkbox).
 
