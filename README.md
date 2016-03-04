@@ -6,9 +6,7 @@ except that it supports an indeterminate state.
 
 Example:
 
-    <tristate-checkbox>label</tristate-checkbox>
-
-    <tristate-checkbox state="on">label</tristate-checkbox>
+![Alt example](./blob/components/tristate-checkbox.png)
 
 The web component handles the `aria-checked` attribute in accordance with the W3C's
 [WAI-ARIA 1.0 Authoring Practices](https://www.w3.org/TR/wai-aria-practices/#checkbox).
