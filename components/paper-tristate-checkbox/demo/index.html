@@ -1,0 +1,95 @@
+<!doctype html>
+<!--
+@license
+Copyright (c) 2016 Thad Humphries. All rights reserved.
+This code is under Apache License Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.txt).
+-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <title>paper-tristate-checkbox Demo</title>
+    <script src="../../webcomponentsjs/webcomponents-lite.min.js"></script>
+    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../paper-tristate-checkbox.html">
+
+    <style is="custom-style" include="demo-pages-shared-styles">
+      paper-tristate-checkbox {
+        display: block;
+        margin-right: 24px;
+      }
+      demo-snippet {
+        margin-bottom: 40px;
+      }
+      .vertical-section-container {
+        max-width: 550px;
+      }
+    </style>
+  </head>
+  <body unresolved>
+  <div>
+
+    <div class="vertical-section-container centered">
+
+      <h3>Tristate checkboxes can be checked or unchecked, or in an indeterminate state.</h3>
+      <demo-snippet class="centered-demo">
+        <template>
+          <paper-tristate-checkbox state="on">Checkbox</paper-tristate-checkbox>
+          <paper-tristate-checkbox state="off">Checkbox</paper-tristate-checkbox>
+          <paper-tristate-checkbox>Checkbox</paper-tristate-checkbox>
+        </template>
+      </demo-snippet>
+
+      <h3>Tristate checkboxs can be disabled in any state.</h3>
+      <demo-snippet class="centered-demo">
+        <template>
+          <paper-tristate-checkbox state="on" disabled>Checkbox</paper-tristate-checkbox>
+          <paper-tristate-checkbox state="off" disabled>Checkbox</paper-tristate-checkbox>
+          <paper-tristate-checkbox disabled>Checkbox</paper-tristate-checkbox>
+        </template>
+      </demo-snippet>
+
+      <h3>Tristate checkboxes can hide the ripple effect using the <i>noink</i> attribute.</h3>
+      <demo-snippet class="centered-demo">
+        <template>
+          <paper-tristate-checkbox noink>Checkbox</paper-tristate-checkbox>
+        </template>
+      </demo-snippet>
+
+      <h3>Checkboxes can be styled using custom properties</h3>
+      <demo-snippet class="centered-demo small-text">
+        <template>
+          <style is="custom-style">
+            paper-tristate-checkbox.red {
+              --paper-tristate-checkbox-checked-color: var(--paper-red-500);
+              --paper-tristate-checkbox-checked-ink-color: var(--paper-red-500);
+              --paper-tristate-checkbox-unchecked-color: var(--paper-red-900);
+              --paper-tristate-checkbox-unchecked-ink-color: var(--paper-red-900);
+              --paper-tristate-checkbox-label-color: var(--paper-red-500);
+            }
+            paper-tristate-checkbox.green {
+              --paper-tristate-checkbox-checked-color: var(--paper-green-500);
+              --paper-tristate-checkbox-checked-ink-color: var(--paper-green-500);
+              --paper-tristate-checkbox-unchecked-color: var(--paper-green-900);
+              --paper-tristate-checkbox-unchecked-ink-color: var(--paper-green-900);
+              --paper-tristate-checkbox-label-color: var(--paper-green-500);
+            }
+            paper-tristate-checkbox.cyan {
+              --paper-tristate-checkbox-checked-color: var(--paper-cyan-500);
+              --paper-tristate-checkbox-checked-ink-color: var(--paper-cyan-500);
+              --paper-tristate-checkbox-unchecked-color: var(--paper-cyan-900);
+              --paper-tristate-checkbox-unchecked-ink-color: var(--paper-cyan-900);
+              --paper-tristate-checkbox-label-color: var(--paper-cyan-500);
+            }
+          </style>
+
+          <paper-tristate-checkbox state="on" class="green">Checkbox</paper-tristate-checkbox>
+          <paper-tristate-checkbox state="off" class="red">Checkbox</paper-tristate-checkbox>
+          <paper-tristate-checkbox class="cyan">Checkbox</paper-tristate-checkbox>
+        </template>
+      </demo-snippet>
+
+    </div>
+  </body>
+</html>
