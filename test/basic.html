@@ -7,29 +7,29 @@ This code is under Apache License Version 2.0 (http://www.apache.org/licenses/LI
 <html>
   <head>
     <meta charset="utf-8">
-    <title>tristate-checkbox basic tests</title>
+    <title>paper-tristate-checkbox basic tests</title>
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0">
 
     <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
     <script src="../../web-component-tester/browser.js"></script>
     <script src="../../iron-test-helpers/mock-interactions.js"></script>
 
-    <link rel="import" href="../tristate-checkbox.html">
+    <link rel="import" href="../paper-tristate-checkbox.html">
 
     <style is="custom-style">
-      tristate-checkbox.no-label-spacing {
-        --tristate-checkbox-label-spacing: 0;
+      paper-tristate-checkbox.no-label-spacing {
+        --paper-tristate-checkbox-label-spacing: 0;
       }
-      tristate-checkbox.giant {
-        --tristate-checkbox-size: 50px;
+      paper-tristate-checkbox.giant {
+        --paper-tristate-checkbox-size: 50px;
       }
-      tristate-checkbox.tiny {
-        --tristate-checkbox-size: 5px;
+      paper-tristate-checkbox.tiny {
+        --paper-tristate-checkbox-size: 5px;
       }
-      tristate-checkbox.large-line-height {
+      paper-tristate-checkbox.large-line-height {
         line-height: 3;
       }
-      tristate-checkbox.small-line-height {
+      paper-tristate-checkbox.small-line-height {
         line-height: 0.25;
       }
     </style>
@@ -38,34 +38,34 @@ This code is under Apache License Version 2.0 (http://www.apache.org/licenses/LI
 
     <test-fixture id="NoLabel">
       <template>
-        <tristate-checkbox id="check1"></tristate-checkbox>
+        <paper-tristate-checkbox id="check1"></paper-tristate-checkbox>
       </template>
     </test-fixture>
 
     <test-fixture id="WithLabel">
       <template>
-        <tristate-checkbox id="check2">Batman</tristate-checkbox>
+        <paper-tristate-checkbox id="check2">Batman</paper-tristate-checkbox>
       </template>
     </test-fixture>
 
     <test-fixture id="AriaLabel">
       <template>
-        <tristate-checkbox id="check3" aria-label="Batman">Robin</tristate-checkbox>
+        <paper-tristate-checkbox id="check3" aria-label="Batman">Robin</paper-tristate-checkbox>
       </template>
     </test-fixture>
 
     <test-fixture id="WithDifferentSizes">
       <template>
-        <tristate-checkbox state="off" class="no-label-spacing"></tristate-checkbox>
-        <tristate-checkbox state="off" class="no-label-spacing giant"></tristate-checkbox>
-        <tristate-checkbox state="off" class="no-label-spacing tiny"></tristate-checkbox>
+        <paper-tristate-checkbox state="off" class="no-label-spacing"></paper-tristate-checkbox>
+        <paper-tristate-checkbox state="off" class="no-label-spacing giant"></paper-tristate-checkbox>
+        <paper-tristate-checkbox state="off" class="no-label-spacing tiny"></paper-tristate-checkbox>
       </template>
     </test-fixture>
 
     <test-fixture id="WithLineHeight">
       <template>
-        <tristate-checkbox class="large-line-height">Checkbox</tristate-checkbox>
-        <tristate-checkbox class="small-line-height">Checkbox</tristate-checkbox>
+        <paper-tristate-checkbox class="large-line-height">Checkbox</paper-tristate-checkbox>
+        <paper-tristate-checkbox class="small-line-height">Checkbox</paper-tristate-checkbox>
       </template>
     </test-fixture>
 
@@ -125,7 +125,7 @@ This code is under Apache License Version 2.0 (http://www.apache.org/licenses/LI
           c1.state = 'off';
           assert.isTrue(c1.validate());
         });
-        
+
         test('checkbox can check sizes', function() {
           var c2 = fixture('WithDifferentSizes');
           var normal = c2[0].getBoundingClientRect();
@@ -144,7 +144,7 @@ This code is under Apache License Version 2.0 (http://www.apache.org/licenses/LI
           assert.isTrue(normal.width < giant.width);
           assert.isTrue(giant.width === 54);
         });
-        
+
         suite('checkbox line-height', function() {
           var large;
           var small;

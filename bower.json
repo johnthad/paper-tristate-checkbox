@@ -1,5 +1,5 @@
 {
-  "name": "tristate-checkbox",
+  "name": "paper-tristate-checkbox",
   "version": "0.1.0",
   "description": "A paper-checkbox like element that supports an indeterminate state.",
   "authors": [
@@ -15,11 +15,17 @@
   "private": false,
   "repository": {
     "type": "git",
-    "url": "git://github.com/johnthad/tristate-checkbox"
+    "url": "git://github.com/johnthad/paper-tristate-checkbox"
   },
   "license": "http://www.apache.org/licenses/LICENSE-2.0",
-  "homepage": "https://github.com/johnthad/tristate-checkbox/",
-  "ignore": [],
+  "homepage": "https://github.com/johnthad/paper-tristate-checkbox/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
   "dependencies": {
     "polymer": "Polymer/polymer#^1.3.0",
     "iron-validatable-behavior": "PolymerElements/iron-validatable-behavior#^1.0.0",
@@ -37,5 +43,5 @@
     "iron-flex-layout": "PolymerElements/iron-flex-layout#^1.0.0",
     "iron-test-helpers": "PolymerElements/iron-test-helpers#^1.0.0"
   },
-  "main": "tristate-checkbox.html"
+  "main": "paper-tristate-checkbox.html"
 }
