@@ -6,7 +6,7 @@ except that it supports an indeterminate state.
 
 Example:
 
-![Alt example](./paper-tristate-checkbox.png)
+![Alt example](https://raw.githubusercontent.com/johnthad/paper-tristate-checkbox/master/paper-tristate-checkbox.png)
 
 [Demo](http://johnthad.github.io/paper-tristate-checkbox/components/paper-tristate-checkbox/)
 
