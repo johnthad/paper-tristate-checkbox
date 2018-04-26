@@ -1,5 +1,11 @@
 # paper-tristate-checkbox
 
+### Deprecated
+
+I will not be moving this component to Polymer 2 or 3. If you require a checkbox with tristate funtionality, I recommend [`vaadin-checkbox`](https://www.webcomponents.org/element/vaadin/vaadin-checkbox).
+
+---
+
 `paper-tristate-checkbox` is a Polymer web component similar to
 [`paper-checkbox`](https://elements.polymer-project.org/elements/paper-checkbox)
 except that it supports an indeterminate state.
